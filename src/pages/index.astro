@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import Icon from "astro-icon"
+import Icon from "astro-icon";
 ---
 
 <!DOCTYPE html>
@@ -13,25 +13,40 @@ import Icon from "astro-icon"
     <title>Aukusti Website</title>
   </head>
   <body>
-    <main class="w-screen min-h-screen md:mx-auto bg-white bg-cover">
-      <section class="min-h-screen">
+    <div class="w-screen min-h-screen md:mx-auto bg-white bg-cover">
+      <div class="min-h-screen">
         <nav class="py-10 mb-12 flex justify-between">
           <h1 class="text-4xl text-orange-500">Web developer</h1>
           <ul class="flex items-center">
             <li>nightmode</li>
           </ul>
         </nav>
-        <div class="text-center">
-          <p class="text-4xl text-orange-500">Aukusti Palomäki</p>
-          <p class="text-3xl text-gray-700">Front-end enjoyer</p>
-		  <p class="text-2xl text-gray-700">life full of music and books to read<br /> while discovering the wide web</p>
-        </div>
-		<div class="text-3xl flex justify-center gap-16 py-3">
-			<a href="https://github.com/daupa001xamk" target="_blank"><Icon name="mdi:github" width="3rem" height="3rem" /></a>
-			<Icon name="mdi:linkedin" width="3rem" height="3rem" />
-			<a href="https://www.last.fm/user/MrAkuu" target="_blank"><Icon name="fa-brands:lastfm-square" width="2.9rem" height="2.9rem" /></a>
-		</div>
-      </section>
-    </main>
+        <main class="flex justify-center">
+          <div class="w-1/2 p-10 rounded-md overflow-hidden shadow-xl">
+            <div class="text-center">
+              <p class="text-4xl text-orange-500">Aukusti Palomäki</p>
+              <p class="text-3xl text-gray-700">Front-end enjoyer</p>
+              <p class="text-2xl text-gray-700">
+                life full of music and books to read<br /> while discovering the
+                wide web
+              </p>
+            </div>
+            <div class="text-3xl gap-16 py-3 flex justify-center">
+              <a href="https://github.com/daupa001xamk" target="_blank"
+                ><Icon name="mdi:github" width="3rem" height="3rem" /></a
+              >
+              <Icon name="mdi:linkedin" width="3rem" height="3rem" />
+              <a href="https://www.last.fm/user/MrAkuu" target="_blank"
+                ><Icon
+                  name="fa-brands:lastfm-square"
+                  width="2.9rem"
+                  height="2.9rem"
+                /></a
+              >
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
   </body>
 </html>
