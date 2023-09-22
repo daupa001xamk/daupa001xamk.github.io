@@ -2,163 +2,218 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Icon from "astro-icon";
+import { Image } from "astro:assets";
+import localAvatarImage from "../img/avatar.jpg"
+
 //https://icon-sets.iconify.design/
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aukusti Website</title>
-  </head>
-  <body>
-    <div class="w-screen min-h-screen md:mx-auto bg-white bg-cover">
-      <!--Nav Bar -->
-      <nav class="py-10 mb-12 flex justify-between">
-        <h1 class="text-4xl text-orange-500">Web developer</h1>
-        <ul class="flex items-center">
-          <li>nightmode</li>
-        </ul>
-      </nav>
-      <!--Main Card -->
-      <main class="flex justify-center flex-row">
-        <div class="w-1/2 p-10 rounded-md shadow-xl">
-          <div class="text-center">
-            <p class="text-4xl text-orange-500">Aukusti Palomäki</p>
-            <p class="text-3xl text-gray-700">Front-end enjoyer</p>
-            <p class="text-2xl text-gray-700">
-              life full of music and books to read<br /> while discovering the wide
-              web
-            </p>
-          </div>
-          <!--Links -->
-          <div class="text-3xl m-10 py-3 flex justify-center gap-10">
-            <a href="https://github.com/daupa001xamk" target="_blank"
-              ><Icon
-                class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-                name="mdi:github"
-                width="3rem"
-                height="3rem"
-              /></a
-            >
-            <a href="" target="_blank">
-              <Icon
-                class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-                name="mdi:linkedin"
-                size="3rem"
-              /></a
-            >
-            <a href="https://www.last.fm/user/MrAkuu" target="_blank"
-              ><Icon
-                class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-                name="fa-brands:lastfm-square"
-                width="2.8rem"
-                height="2.8rem"
-              /></a
-            >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aukusti Website</title>
+</head>
+
+<body>
+  <div class="w-screen min-h-screen md:mx-auto bg-slate-600 bg-cover">
+    <div class="py-10 mb-12">
+    </div>
+    <!--Main Card -->
+    <div class="flex justify-center">
+      <div class=" p-10 rounded-2xl shadow-xl flex bg-gray-600 ">
+        <div class="text-center mt-16 ">
+          <h1 class="text-4xl text-orange-500">Aukusti Palomäki</h1>
+          <hp class="text-3xl text-orange-500">Web developer</hp>
+          <p class="text-3xl text-gray-200">Front-end enjoyer</p>
+          <p class="text-2xl text-gray-200">
+            Life is full of music and books to read<br /> while discovering the world wide web
+          </p>
+
+          <nav class="text-2xl">
+            <a class="mr-2 underline" href="#about">About</a>
+            <a class="mr-2 underline" href="#projects">Projects</a>
+            <a class="mr-2 underline" href="#links">Links</a>
+          </nav>
+        </div>
+        <Image src={localAvatarImage} alt={"avatar image"} class="w-64 h-64 rounded-full ml-3 mt-5" />
+      </div>
+
+
+    </div>
+    <!--Links -->
+    <div class="flex justify-center pt-6" id="about">
+      <div class="p-10 rounded-2xl w-1/2 shadow-xl flex-row bg-gray-600 ">
+        <div class="">
+          <h2 class="text-center text-5xl text-orange-500 mb-5 ">About me!</h2>
+          <div class="text-left text-gray-200 text-xl">
+            <p class="mb-5">Hello there! I'm a passionate individual who finds joy in a variety of creative and intellectual
+              pursuits. Music, coding, and reading are my cherished companions in the journey of life.</p>
+            <p class="mb-5">What comes to hobbies, I have always listened to music. Not only do I indulge in the sounds  of all kinds of genres,
+               but I also like to pick up my bass guitar from time to time to play around with.</p>
+            <p class="mb-5">Coding has been a significant part of my life for few years now. I find immense satisfaction in
+              deciphering complex problems and crafting elegant solutions. While I initially gravitated toward front-end
+              development, I've been gradually immersing myself in the world of back-end development and the art of unit
+              testing. The ever-evolving nature of technology keeps me motivated, and the challenges it brings.</p>
+
+            <p class="mb-5">In my free time, I'll be reading something. Reading is my escape into different
+              worlds, a way to spent free time and feel like I have achieved something for the day. Coupled with listening music, it creates the
+              perfect backdrop for moments of relaxation and introspection.</p>
+
+            <p class="mb-5">I embrace my introverted nature as a strength. It allows me to delve deep into problems independently,
+              finding creative solutions and taking full responsibility for my work. While I may not always seek
+              external motivation, my internal drive fuels my continuous quest for learning and self-improvement.</p>
+
+            <p class="mb-5">So, that's a glimpse into who I am—a music enthusiast, a coding aficionado, a voracious reader, and an
+              introvert who thrives on self-reliance. I look forward to the exciting challenges and opportunities that
+              the future holds, knowing that every problem I encounter is just another chance to grow.</p>
           </div>
         </div>
-      </main>
-      <!--Projects card -->
-      <section class="flex justify-center flex-row py-15">
-        <div class="w-1/2 p-10 rounded-md shadow-xl">
-          <div class="text-center">
-            <p class="text-4xl text-orange-500">Projects</p>
-            <div class="flex justify-between items-center py-5">
-              <div class="flex py-5 items-center">
-                <Icon
-                  class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-                  name="ic:outline-menu-book"
-                  width="2.8rem"
-                  height="2.8rem"
-                />
-                <p class="text-2xl px-3 text-gray-700">WNDeepLReader</p>
-              </div>
-              <div class="flex py-5 items-center">
-                <Icon
-                name="mdi:react"
-                width="2.8rem"
-                height="2.8rem"
-                />
-                <Icon
-                name="tabler:api"
-                width="2.8rem"
-                height="2.8rem"
-                />
-                <div>
-              </div>
-              <p class="text-2xl px-3 text-gray-700">(In progress)
-              </div>
-            </div>
-            <div class="flex justify-between items-center py-5">
+        <div class="text-3xl m-10 flex justify-center gap-10">
+          <a href="https://github.com/daupa001xamk" target="_blank">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="mdi:github" width="4rem" height="4rem" />
+          </a>
+          <a href="https://osu.ppy.sh/users/3293579" target="_blank">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="simple-icons:osu" size="4rem" />
+          </a>
+          <a href="https://www.last.fm/user/MrAkuu" target="_blank">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="fa-brands:lastfm-square" width="3.8rem" height="3.8rem" />
+          </a>
+        </div>
+      </div>
+    </div>
+    </main>
+    <!--Projects card -->
+    <section class="flex justify-center flex-row pt-6" id="projects">
+      <div class="w-1/2 p-10 rounded-md shadow-xl bg-gray-600">
+        <div class="text-center">
+          <h2 class="text-5xl text-orange-500">Projects</h2>
+          <div class="flex justify-between items-center py-5">
             <div class="flex py-5 items-center">
               <Icon
                 class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-                name="ic:baseline-library-music"
-                width="2.8rem"
-                height="2.8rem"
-              />
-              <p class="text-2xl px-3 text-gray-700">Music player</p>
+                name="ic:outline-menu-book" width="2.8rem" height="2.8rem" />
+              <p class="text-2xl px-3 text-gray-200">WNDeepLReader</p>
             </div>
             <div class="flex py-5 items-center">
-              <Icon
-              name="cib:kotlin"
-              width="1.8rem"
-              height="1.8rem"
-              />
+              <Icon name="mdi:react" width="2.8rem" height="2.8rem" />
+              <Icon name="tabler:api" width="2.8rem" height="2.8rem" />
               <div>
-              <p class="text-2xl px-3 text-gray-700">(Starting)
               </div>
+              <p class="text-2xl px-3 text-gray-200">(In progress)
             </div>
           </div>
-        </div>
-            <div class="flex justify-between items-center py-5">
-              <div class="flex py-5 items-center">
-              <Icon
-                class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-                name="ri:todo-fill"
-                width="2.8rem"
-                height="2.8rem"
-              />
-              <p class="text-2xl px-3 text-gray-700">Time manager / diary</p>
-            </div>
+          <div class="flex justify-between items-center py-5">
             <div class="flex py-5 items-center">
               <Icon
-              name="simple-icons:csharp"
-              width="2.8rem"
-              height="2.8rem"
-              />
+                class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+                name="ic:baseline-library-music" width="2.8rem" height="2.8rem" />
+              <p class="text-2xl px-3 text-gray-200">Music player</p>
+            </div>
+            <div class="flex py-5 items-center">
+              <Icon name="cib:kotlin" width="1.8rem" height="1.8rem" />
               <div>
-              <p class="text-2xl px-3 text-gray-700">(Starting)
+                <p class="text-2xl px-3 text-gray-200">(Planning)
               </div>
             </div>
           </div>
           <div class="flex justify-between items-center py-5">
             <div class="flex py-5 items-center">
-            <Icon
-              class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-              name="iconoir:www"
-              width="2.8rem"
-              height="2.8rem"
-            />
-            <p class="text-2xl px-3 text-gray-700">This website</p>
-          </div>
-          <div class="flex py-5 items-center">
-            <Icon
-            name="simple-icons:astro"
-            width="2.8rem"
-            height="2.8rem"
-            />
-            <div>
-            <p class="text-2xl px-3 text-gray-700">(ongoing)
+              <Icon
+                class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+                name="ic:baseline-library-music" width="2.8rem" height="2.8rem" />
+              <p class="text-2xl px-3 text-gray-200">Mini Osu player</p>
+            </div>
+            <div class="flex py-5 items-center">
+              <Icon name="mdi:language-csharp" width="2.8rem" height="2.8rem" />
+              <div>
+                <p class="text-2xl px-3 text-gray-200">(Planning)
+              </div>
             </div>
           </div>
         </div>
+        <div class="flex justify-between items-center py-5">
+          <div class="flex py-5 items-center">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="ri:todo-fill" width="2.8rem" height="2.8rem" />
+            <p class="text-2xl px-3 text-gray-200">Time manager / diary</p>
+          </div>
+          <div class="flex py-5 items-center">
+            <Icon name="mdi:react" width="2.8rem" height="2.8rem" />
+            <div>
+              <p class="text-2xl px-3 text-gray-200">(Starting)
+            </div>
+          </div>
         </div>
-      </section>
-      <!--  -->
+        <div class="flex justify-between items-center py-5">
+          <div class="flex py-5 items-center">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="iconoir:www" width="2.8rem" height="2.8rem" />
+            <p class="text-2xl px-3 text-gray-200">This website</p>
+          </div>
+          <div class="flex py-5 items-center">
+            <Icon name="simple-icons:astro" width="2.8rem" height="2.8rem" />
+            <div>
+              <p class="text-2xl px-3 text-gray-200">(ongoing)
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center py-5">
+          <div class="flex py-5 items-center">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="mdi:cards-outline" width="2.8rem" height="2.8rem" />
+            <p class="text-2xl px-3 text-gray-200">Study-planner</p>
+          </div>
+          <div class="flex py-5 items-center">
+            <Icon name="simple-icons:vite" width="2.8rem" height="2.8rem" />
+            <Icon name="mdi:react" width="2.8rem" height="2.8rem" />
+            <Icon name="logos:prisma" width="2.8rem" height="2.8rem" />
+            <div>
+              <p class="text-2xl px-3 text-gray-200">(In progress)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Links -->
+    <div class="flex justify-center pt-6">
+      <div class="p-10 rounded-2xl shadow-xl flex-row bg-gray-600 " id="links">
+        <div class="text-center">
+          <h2 class="text-5xl text-orange-500 ">Links</h2>
+        </div>
+        <div class="text-3xl m-10 flex justify-center gap-10">
+          <a href="https://github.com/daupa001xamk" target="_blank">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="mdi:github" width="4rem" height="4rem" />
+          </a>
+          <a href="https://osu.ppy.sh/users/3293579" target="_blank">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="simple-icons:osu" size="4rem" />
+          </a>
+          <a href="https://www.last.fm/user/MrAkuu" target="_blank">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="fa-brands:lastfm-square" width="3.8rem" height="3.8rem" />
+          </a>
+        </div>
+      </div>
     </div>
-  </body>
+
+  </div>
+</body>
+
 </html>
