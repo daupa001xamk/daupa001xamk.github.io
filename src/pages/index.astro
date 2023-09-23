@@ -4,7 +4,10 @@ import Card from "../components/Card.astro";
 import Icon from "astro-icon";
 import { Image } from "astro:assets";
 import localAvatarImage from "../img/avatar.jpg"
-
+import worksetupImage from "../img/worksetup.jpg"
+import introvertAboutImage from "../img/introvertAbout.jpg"
+import BassguitarImage from "../img/bassguitar.jpg"
+import SwitchImage from "../img/switch.jpg"
 //https://icon-sets.iconify.design/
 ---
 
@@ -19,24 +22,27 @@ import localAvatarImage from "../img/avatar.jpg"
 </head>
 
 <body>
-  <div class="w-screen min-h-screen md:mx-auto bg-slate-600 bg-cover">
+  <div class="w-screen min-h-screen bg-slate-600 bg-cover">
     <div class="py-10 mb-12">
     </div>
     <!--Main Card -->
     <div class="flex justify-center">
-      <div class=" p-10 rounded-2xl shadow-xl flex bg-gray-600 ">
-        <div class="text-center mt-16 ">
-          <h1 class="text-4xl text-orange-500">Aukusti Palomäki</h1>
-          <hp class="text-3xl text-orange-500">Web developer</hp>
-          <p class="text-3xl text-gray-200">Front-end enjoyer</p>
-          <p class="text-2xl text-gray-200">
-            Life is full of music and books to read<br /> while discovering the world wide web
-          </p>
+      <div class=" p-10 rounded-2xl shadow-xl flex justify-between bg-gray-700 w-1/2 ">
+        <div class="text-center ml-16">
+          <div class="text-orange-500">
+            <h1 class="text-5xl mt-10">Aukusti Palomäki</h1>
+            <p class="text-4xl">Web developer</p>
+          </div>
+          <div class="text-gray-200">
+            <p class="text-4xl">Front-end enjoyer</p>
+            <p class="text-3xl">
+              Life is full of music and books to read<br /> while discovering the world wide web
+            </p>
+          </div>
 
-          <nav class="text-2xl">
-            <a class="mr-2 underline" href="#about">About</a>
-            <a class="mr-2 underline" href="#projects">Projects</a>
-            <a class="mr-2 underline" href="#links">Links</a>
+          <nav class="text-2xl underline">
+            <a class="m-2" href="#about">About</a>
+            <a class="m-2" href="#projects">Projects</a>
           </nav>
         </div>
         <Image src={localAvatarImage} alt={"avatar image"} class="w-64 h-64 rounded-full ml-3 mt-5" />
@@ -44,49 +50,71 @@ import localAvatarImage from "../img/avatar.jpg"
 
 
     </div>
-    <!--Links -->
+    <!-- about -->
     <div class="flex justify-center pt-6" id="about">
-      <div class="p-10 rounded-2xl w-1/2 shadow-xl flex-row bg-gray-600 ">
+      <div class="p-10 rounded-2xl w-1/2 shadow-xl flex-row bg-gray-700 ">
         <div class="">
           <h2 class="text-center text-5xl text-orange-500 mb-5 ">About me!</h2>
-          <div class="text-left text-gray-200 text-xl">
-            <p class="mb-5">Hello there! I'm a passionate individual who finds joy in a variety of creative and intellectual
+          <div class="text-left text-gray-200 text-2xl">
+            <p class="mb-5">Hello there! I'm a passionate individual who finds joy in a variety of creative and
+              intellectual
               pursuits. Music, coding, and reading are my cherished companions in the journey of life.</p>
-            <p class="mb-5">What comes to hobbies, I have always listened to music. Not only do I indulge in the sounds  of all kinds of genres,
-               but I also like to pick up my bass guitar from time to time to play around with.</p>
-            <p class="mb-5">Coding has been a significant part of my life for few years now. I find immense satisfaction in
-              deciphering complex problems and crafting elegant solutions. While I initially gravitated toward front-end
-              development, I've been gradually immersing myself in the world of back-end development and the art of unit
-              testing. The ever-evolving nature of technology keeps me motivated, and the challenges it brings.</p>
+            <p class="mb-5">What comes to hobbies, I have always listened to music. Not only do I indulge in the sounds
+              of all kinds of genres,
+              but I also like to pick up my bass guitar from time to time to play around with.</p>
+            <div class=" mb-5">
+              <p class="mt-6">Coding has been a significant part of my life for few years now. I find immense
+                satisfaction in
+                deciphering complex problems and crafting elegant solutions. While I initially gravitated toward
+                front-end
+                development, I've been gradually immersing myself in the world of back-end development and the art of
+                unit
+                testing. The ever-evolving nature of technology keeps me motivated, and the challenges it brings.</p>
+              <Image src={worksetupImage} alt={"avatar image"} class="h-96 rounded-3xl ml-3 mt-10" />
+            </div>
+            <!-- Freetime -->
+            <div class="flex justify-between mb-5">
+              <p class="mt-20">In my free time, I'll be reading something. Reading is my escape into different
+                worlds, a way to spent free time and feel like I have achieved something for the day. Coupled with
+                listening music, it creates the
+                perfect backdrop for moments of relaxation and introspection.
+              </p>
 
-            <p class="mb-5">In my free time, I'll be reading something. Reading is my escape into different
-              worlds, a way to spent free time and feel like I have achieved something for the day. Coupled with listening music, it creates the
-              perfect backdrop for moments of relaxation and introspection.</p>
-
-            <p class="mb-5">I embrace my introverted nature as a strength. It allows me to delve deep into problems independently,
-              finding creative solutions and taking full responsibility for my work. While I may not always seek
-              external motivation, my internal drive fuels my continuous quest for learning and self-improvement.</p>
-
-            <p class="mb-5">So, that's a glimpse into who I am—a music enthusiast, a coding aficionado, a voracious reader, and an
+              <Image src={BassguitarImage} alt={"Bass guitar image"} class="w-64 h-72 rounded-3xl ml-3 mt-5" />
+            </div>
+            <!-- Introvert -->
+            <div class="flex justify-between mb-5">
+              <p class="mt-6">I embrace my introverted nature as a strength. It allows me to delve deep into problems
+                independently,
+                finding creative solutions and taking full responsibility for my work. While I may not always seek
+                external motivation, my internal drive fuels my continuous quest for learning and self-improvement.</p>
+              <Image src={introvertAboutImage} alt={"Night laptop image"} class="w-56 h-72 rounded-3xl ml-3 mt-5" />
+            </div>
+            <!-- closing text -->
+            <p class="mb-5 mt-10">So, that's a glimpse into who I am—a music enthusiast, a coding aficionado, a
+              voracious
+              reader, and an
               introvert who thrives on self-reliance. I look forward to the exciting challenges and opportunities that
               the future holds, knowing that every problem I encounter is just another chance to grow.</p>
           </div>
+          <Image src={SwitchImage} alt={"Nintendo Switch image"} class=" h-96  rounded-3xl mt-5" />
         </div>
+        <!-- Link -->
         <div class="text-3xl m-10 flex justify-center gap-10">
           <a href="https://github.com/daupa001xamk" target="_blank">
             <Icon
               class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
               name="mdi:github" width="4rem" height="4rem" />
           </a>
-          <a href="https://osu.ppy.sh/users/3293579" target="_blank">
-            <Icon
-              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-              name="simple-icons:osu" size="4rem" />
-          </a>
           <a href="https://www.last.fm/user/MrAkuu" target="_blank">
             <Icon
               class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
               name="fa-brands:lastfm-square" width="3.8rem" height="3.8rem" />
+          </a>
+          <a href="https://osu.ppy.sh/users/3293579" target="_blank">
+            <Icon
+              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+              name="simple-icons:osu" size="4rem" />
           </a>
         </div>
       </div>
@@ -94,9 +122,47 @@ import localAvatarImage from "../img/avatar.jpg"
     </main>
     <!--Projects card -->
     <section class="flex justify-center flex-row pt-6" id="projects">
-      <div class="w-1/2 p-10 rounded-md shadow-xl bg-gray-600">
+      <div class="w-1/2 p-10 rounded-md shadow-xl bg-gray-700">
         <div class="text-center">
           <h2 class="text-5xl text-orange-500">Projects</h2>
+          <!-- this website -->
+          <div class="flex justify-between items-center py-5">
+            <div class="flex py-5 items-center">
+              <a href="#" target="_blank">
+                <Icon
+                  class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+                  name="iconoir:www" width="2.8rem" height="2.8rem" />
+              </a>
+              <a class="text-2xl px-3 text-gray-200" href="" target="_blank">This website</a>
+            </div>
+            <div class="flex py-5 items-center">
+              <Icon name="simple-icons:astro" width="2.8rem" height="2.8rem" />
+              <div>
+                <p class="text-2xl px-3 text-gray-200">(ongoing)
+              </div>
+            </div>
+          </div>
+          <!-- Study-helper -->
+          <div class="flex justify-between items-center py-5">
+            <div class="flex py-5 items-center">
+              <a href="https://github.com/daupa001xamk/study-helper" target="_blank">
+                <Icon
+                  class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+                  name="mdi:cards-outline" width="2.8rem" height="2.8rem" />
+              </a>
+              <a class="text-2xl px-3 text-gray-200" href="https://github.com/daupa001xamk/study-helper"
+                target="_blank">Study-helper</a>
+            </div>
+            <div class="flex py-5 items-center">
+              <Icon name="simple-icons:vite" width="2.8rem" height="2.8rem" />
+              <Icon name="mdi:react" width="2.8rem" height="2.8rem" />
+              <Icon name="logos:prisma" width="2.8rem" height="2.8rem" />
+              <div>
+                <p class="text-2xl px-3 text-gray-200">(In progress)
+              </div>
+            </div>
+          </div>
+          <!-- WNDeepLReader -->
           <div class="flex justify-between items-center py-5">
             <div class="flex py-5 items-center">
               <Icon
@@ -112,6 +178,23 @@ import localAvatarImage from "../img/avatar.jpg"
               <p class="text-2xl px-3 text-gray-200">(In progress)
             </div>
           </div>
+          <!-- Time manage / diary -->
+          <div class="flex justify-between items-center py-5">
+            <div class="flex py-5 items-center">
+              <Icon
+                class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
+                name="ri:todo-fill" width="2.8rem" height="2.8rem" />
+              <p class="text-2xl px-3 text-gray-200">Time manager / diary</p>
+            </div>
+            <div class="flex py-5 items-center">
+              <Icon name="mdi:react" width="2.8rem" height="2.8rem" />
+              <div>
+                <p class="text-2xl px-3 text-gray-200">(Starting)
+              </div>
+            </div>
+          </div>
+
+          <!-- Music player -->
           <div class="flex justify-between items-center py-5">
             <div class="flex py-5 items-center">
               <Icon
@@ -126,6 +209,7 @@ import localAvatarImage from "../img/avatar.jpg"
               </div>
             </div>
           </div>
+          <!-- Mini Osu player -->
           <div class="flex justify-between items-center py-5">
             <div class="flex py-5 items-center">
               <Icon
@@ -141,77 +225,10 @@ import localAvatarImage from "../img/avatar.jpg"
             </div>
           </div>
         </div>
-        <div class="flex justify-between items-center py-5">
-          <div class="flex py-5 items-center">
-            <Icon
-              class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-              name="ri:todo-fill" width="2.8rem" height="2.8rem" />
-            <p class="text-2xl px-3 text-gray-200">Time manager / diary</p>
-          </div>
-          <div class="flex py-5 items-center">
-            <Icon name="mdi:react" width="2.8rem" height="2.8rem" />
-            <div>
-              <p class="text-2xl px-3 text-gray-200">(Starting)
-            </div>
-          </div>
-        </div>
-        <div class="flex justify-between items-center py-5">
-          <div class="flex py-5 items-center">
-            <Icon
-              class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-              name="iconoir:www" width="2.8rem" height="2.8rem" />
-            <p class="text-2xl px-3 text-gray-200">This website</p>
-          </div>
-          <div class="flex py-5 items-center">
-            <Icon name="simple-icons:astro" width="2.8rem" height="2.8rem" />
-            <div>
-              <p class="text-2xl px-3 text-gray-200">(ongoing)
-            </div>
-          </div>
-        </div>
-        <div class="flex justify-between items-center py-5">
-          <div class="flex py-5 items-center">
-            <Icon
-              class="hover:-translate-y-1 hover:scale-100 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-              name="mdi:cards-outline" width="2.8rem" height="2.8rem" />
-            <p class="text-2xl px-3 text-gray-200">Study-planner</p>
-          </div>
-          <div class="flex py-5 items-center">
-            <Icon name="simple-icons:vite" width="2.8rem" height="2.8rem" />
-            <Icon name="mdi:react" width="2.8rem" height="2.8rem" />
-            <Icon name="logos:prisma" width="2.8rem" height="2.8rem" />
-            <div>
-              <p class="text-2xl px-3 text-gray-200">(In progress)
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-    <!--Links -->
-    <div class="flex justify-center pt-6">
-      <div class="p-10 rounded-2xl shadow-xl flex-row bg-gray-600 " id="links">
-        <div class="text-center">
-          <h2 class="text-5xl text-orange-500 ">Links</h2>
-        </div>
-        <div class="text-3xl m-10 flex justify-center gap-10">
-          <a href="https://github.com/daupa001xamk" target="_blank">
-            <Icon
-              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-              name="mdi:github" width="4rem" height="4rem" />
-          </a>
-          <a href="https://osu.ppy.sh/users/3293579" target="_blank">
-            <Icon
-              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-              name="simple-icons:osu" size="4rem" />
-          </a>
-          <a href="https://www.last.fm/user/MrAkuu" target="_blank">
-            <Icon
-              class="hover:-translate-y-1 hover:scale-150 duration-500 hover:bg-orange-600 hover:rounded-lg hover:h-20"
-              name="fa-brands:lastfm-square" width="3.8rem" height="3.8rem" />
-          </a>
-        </div>
-      </div>
-    </div>
+  </div>
+  </div>
 
   </div>
 </body>
