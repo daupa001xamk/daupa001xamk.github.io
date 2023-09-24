@@ -6,7 +6,7 @@ What comes to hobbies, I have always listened to music. Not only do I indulge in
 
 Coding has been a significant part of my life for few years now. I find immense satisfaction in deciphering complex problems and crafting elegant solutions. While I initially gravitated toward front-end development, I've been gradually immersing myself in the world of back-end development and the art of unit testing. The ever-evolving nature of technology keeps me motivated, and the challenges it brings.
 
-In my free time, I'll be reading something. Reading is my escape into different worlds, a way to spent free time and feel like I have achieved something for the day. Coupled with listening music, it creates the perfect backdrop for moments of relaxation and introspection.
+In my free time, I'll be reading something. Reading is my escape into different worlds, a way to spent free time and feel like I have achieved something for the day. Coupled with listening music, it creates the perfect backdrop for moments of relaxation and introspection. Other than reading or listening to music I used to play a lot of Osu!, a rhythm game, but now I play it now and then.
 
 I embrace my introverted nature as a strength. It allows me to delve deep into problems independently, finding creative solutions and taking full responsibility for my work. While I may not always seek external motivation, my internal drive fuels my continuous quest for learning and self-improvement.
 
